@@ -2,4 +2,4 @@
 #### 案例
 > [幻灯片]( https://forevercz.github.io/jsShow/Slide)
 > [日历]( https://forevercz.github.io/jsShow/Calendar)
-> [弹创]( https://forevercz.github.io/jsShow/Pop)
+> [弹窗]( https://forevercz.github.io/jsShow/Pop)
