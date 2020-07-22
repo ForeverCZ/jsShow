@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.sp{
+				width: 1200px;
+				height: 10px;
+				margin: 100px auto;
+				/* border: 1px solid #000000; */
+				overflow: hidden;
+			}
+			.sp::before{
+				content: "";
+				width: 100%;
+				height: 10px;
+				/* 默认是内联元素 */
+				display: inline-block;
+				margin-top: -10px;
+				border-radius: 50%;
+				box-shadow: 0 0 10px 0 #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="" class="sp">
+			
+		</div>
+	</body>
+</html>
