@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.warper {
+	/* 最小高度 */
+	position: relative;
+	min-height: 100%;
+	position: relative;
+	box-sizing: border-box;
+	/* padding-bottom: 100px; */
+}
+
+.test {
+	height: 500px;
+	background-color: lightcoral;
+}
+
+ul {
+	list-style: none;
+	font-size: 0;
+}
+
+.warper>.footer {
+	background-color: lightgreen;
+	width: 100%;
+	/* height: 100px; */
+	/* line-height: 100px; */
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.warper>.footer>li {
+	display: inline-block;
+	padding: 5px 20px;
+	font-size: 12px;
+	text-align: center;
+}
