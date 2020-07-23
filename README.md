@@ -7,6 +7,7 @@
 ##### [纺锤体特效]( https://forevercz.github.io/jsShow/fangChuiTi)
 
 #### 基本案例
-#####  [幻灯片]( https://forevercz.github.io/jsShow/Slide)
-#####  [日历]( https://forevercz.github.io/jsShow/Calendar)
+##### [日历]( https://forevercz.github.io/jsShow/Calendar)
 ##### [弹窗]( https://forevercz.github.io/jsShow/Pop)
+##### [幻灯片]( https://forevercz.github.io/jsShow/Slide)
+##### [图片弹窗]( https://forevercz.github.io/jsShow/picPop)
