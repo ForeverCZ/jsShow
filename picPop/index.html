@@ -3,16 +3,27 @@
 	<head>
 		<meta charset="utf-8">
 		<title>图片弹窗</title>
+		<link rel="stylesheet" type="text/css" href="./css/index.css" />
 	</head>
 	<body>
-		<!-- 触发弹窗 -->
-		
-		<img src="https://c.runoob.com/wp-content/uploads/2017/01/btotbhpudiagtmvlkyrs.jpg" alt="风景图" title="风景图" width="300px" height="200" />
+		<!-- 触发弹窗 - 图片改为你的图片地址 -->
+		<img id="myImg" src="https://c.runoob.com/wp-content/uploads/2017/01/btotbhpudiagtmvlkyrs.jpg" alt="云南大旅游" width="300"
+		 height="200">
+
 		<!-- 弹窗 -->
-		<div class="modal"></div>
-		<!-- 关闭按钮 -->
-		<span class="close" onclick="document.getElementById('myModel').style.display='none'">&times;</span>
-		<!-- 弹窗内容 -->
-		img.modal
+		<div id="myModal" class="modal">
+
+			<!-- 关闭按钮 -->
+			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+			<!-- 弹窗内容 -->
+			<img class="modal-content" id="img01">
+
+			<!-- 文本描述 -->
+			<div id="caption"></div>
+		</div>
+		<script type="text/javascript" src="./js/index.js">
+
+		</script>
 	</body>
 </html>
