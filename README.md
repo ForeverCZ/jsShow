@@ -15,3 +15,4 @@
 ##### [弹窗]( https://forevercz.github.io/jsShow/Pop)
 ##### [幻灯片]( https://forevercz.github.io/jsShow/Slide)
 ##### [图片弹窗]( https://forevercz.github.io/jsShow/picPop)
+##### [lightBox]( https://forevercz.github.io/jsShow/lightBox)
