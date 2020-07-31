@@ -1,7 +1,8 @@
 #### Welcome to 一笑而过的js案例专区
 
-> 必备技术 
+> 必备技术
 > 
+##### [放大镜]( https://forevercz.github.io/jsShow/magnifyingGlass)
 ##### [粘性页脚]( https://forevercz.github.io/jsShow/sticky-footer)
 
 > 必备特效

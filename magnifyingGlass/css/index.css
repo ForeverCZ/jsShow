@@ -1,0 +1,106 @@
+.box {
+	width: 480px;
+	margin: 100px auto;
+}
+
+/* 大图片 */
+
+.big-image-list-wrapper {
+	width: 100%;
+	padding-top: 100%;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+ul.big-image-list {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+ul.big-image-list>li {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	opacity: 0;
+	transition: opacity opacity 0.6s;
+}
+ul.big-image-list>li.show{
+	opacity: 1;
+}
+/* 用padding-top撑起高度,实现一比一 */
+ul.big-image-list>li>div.image-wrapper {
+	width: 100%;
+	padding-top: 100%;
+	position: relative;
+}
+
+ul.big-image-list>li>div.image-wrapper>img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+/* 小图片 */
+.image-list-wrapper {
+	/* 没有宽度不用设置,I盒模型  块元素自己有流体特性*/
+	padding: 0 15px;
+	position: relative;
+	overflow: hidden;
+}
+
+.image-list-wrapper>span {
+	position: absolute;
+	width: 15px;
+	height: 100%;
+	top: 0;
+	background-color: #aaa;
+}
+
+.image-list-wrapper>span.prev {
+	left: 0;
+	z-index: 999;
+}
+
+.image-list-wrapper>span.netx {
+	right: 0;
+	z-index: 999;
+}
+
+.image-list-wrapper>.image-list {
+	font-size: 0;
+	white-space: nowrap;
+	transition: all 0.5s;
+}
+
+.image-list-wrapper>.image-list>li {
+	display: inline-block;
+	width: 20%;
+	padding: 0 3px;
+	box-sizing: border-box;
+}
+
+.image-list-wrapper>.image-list>li>.image-wrapper {
+	width: 100%;
+	/* 用padding撑起来的高度 */
+	padding-top: 100%;
+	position: relative;
+}
+
+.image-list-wrapper>.image-list>li>.image-wrapper>img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
