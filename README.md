@@ -17,3 +17,7 @@
 ##### [幻灯片]( https://forevercz.github.io/jsShow/Slide)
 ##### [图片弹窗]( https://forevercz.github.io/jsShow/picPop)
 ##### [lightBox]( https://forevercz.github.io/jsShow/lightBox)
+
+> 插件封装
+>
+##### [原生js自定义消息框]( https://forevercz.github.io/jsShow/custom-message)

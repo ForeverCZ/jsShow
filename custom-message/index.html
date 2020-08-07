@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>测试消息提示自定义插件</title>
+</head>
+
+<body>
+
+    <script src="./index.js"></script>
+    <script>
+        // Message.notice("购物失败");
+        Message.confirm("我是不是最帅的！", function(param) {
+            Message.alert("你真懂我~~")
+        });
+		// Message.alert("你好哇");
+    </script>
+</body>
+
+</html>
