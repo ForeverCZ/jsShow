@@ -15,14 +15,14 @@ var Message = {
 
 function alert(msg) {
 	if (document.querySelector(".message-alert")) return;
-	var div = document.createElement("div");
-	div.className = "message-alert";
-	div.style.position = "fixed";
-	div.style.left = "0";
-	div.style.top = "0";
-	div.style.width = "100%";
-	div.style.height = "100%";
-	div.innerHTML +=
+	var divAlert = document.createElement("div");
+	divAlert.className = "message-alert";
+	divAlert.style.position = "fixed";
+	divAlert.style.left = "0";
+	divAlert.style.top = "0";
+	divAlert.style.width = "100%";
+	divAlert.style.height = "100%";
+	divAlert.innerHTML +=
 		`
         <div style="min-width: 300px; 
                     max-width:500px;
@@ -46,9 +46,9 @@ function alert(msg) {
 		   </p>
         </div>
     `;
-	document.body.appendChild(div);
-	div.querySelector('.btn-ok').onclick = function() {
-		document.body.removeChild(div);
+	document.body.appendChild(divAlert);
+	divAlert.querySelector('.btn-ok').onclick = function() {
+		document.body.removeChild(divAlert);
 	};
 
 }
@@ -98,21 +98,21 @@ function confirm(msg, callBack) {
 }
 
 function notice(msg) {
-	var div = document.createElement("div");
-	div.className = "message-notice";
-	div.textContent = msg;
-	div.style.position = "fixed";
-	div.style.left = "50%";
-	div.style.top = "50%";
-	div.style.transform = "translate(-50%,-50%)";
-	div.style.padding = "15px 27px";
-	div.style.backgroundColor = "rgba(0,0,0,.7)";
-	div.style.color = "white";
-	div.style.borderRadius = "7px";
-	div.style.fontSize = "16px";
-	div.style.border = "1px solid #555";
-	div.style.boxShadow = "inset  0 0 7px 0 #eee";
-	document.body.appendChild(div);
+	var divNotice = document.createElement("div");
+	divNotice.className = "message-notice";
+	divNotice.textContent = msg;
+	divNotice.style.position = "fixed";
+	divNotice.style.left = "50%";
+	divNotice.style.top = "50%";
+	divNotice.style.transform = "translate(-50%,-50%)";
+	divNotice.style.padding = "15px 27px";
+	divNotice.style.backgroundColor = "rgba(0,0,0,.7)";
+	divNotice.style.color = "white";
+	divNotice.style.borderRadius = "7px";
+	divNotice.style.fontSize = "16px";
+	divNotice.style.border = "1px solid #555";
+	divNotice.style.boxShadow = "inset  0 0 7px 0 #eee";
+	document.body.appendChild(divNotice);
 	// 出现1.5s后自动消失
 	setTimeout(() => {
 		document.body.removeChild(document.querySelector("div.message-notice"));
